@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#F1FAEE;
+}
+form{
+    width: 350px;
+    margin: 50px auto ;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #2B3A55;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.input, #checkbox{
+    display: flex;
+    flex-direction: column;
+}
+#checkbox label{
+    text-align: center;
+    color: rgb(193, 228, 228);
+}
+.input{
+    height: 90px;
+    text-transform: capitalize;
+}
+button{
+    display: inline-block;
+    align-self: center;
+    margin:10px 0 -10px 0;
+    width: 100px;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color:#fff;
+}
+.errorMsg{
+    color: rgb(231, 167, 167);
+    font-size: 12px;
+    margin-top: 2px;
+}
+div input{
+    line-height: 32px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+label{
+    color: #ffff;
+}
