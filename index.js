@@ -102,18 +102,17 @@ MyForm.addEventListener("submit",(e)=>{
     }else if(confirmPasswordInput.value ===''){
         confirmPasswordError.textContent = "confirm your password";
         confirmPasswordError.style.display = 'block';
-        passwordError.classList.add('errorMsg');
+        confirmPasswordError.classList.add('errorMsg');
         confirmPasswordInput.focus();
         e.preventDefault();
 
     }else if(confirmPasswordInput.value !== passwordInput.value){
         confirmPasswordError.textContent = "password does not match";
         confirmPasswordError.style.display = 'block';
-        passwordError.classList.add('errorMsg');
+        confirmPasswordError.classList.add('errorMsg');
         confirmPasswordInput.focus();
         e.preventDefault();
     }
-    
     // email validate function
     function isValidEmail(email){
         const Emailvalidate = /\S+@\S+\.\S+/;
@@ -125,5 +124,7 @@ MyForm.addEventListener("submit",(e)=>{
     console.log("password is :",passwordInput.value);
     console.log("checkbox is checked :",checkboxInput.checked);
     // rerturn true if accept the terms and conditions otherwise false
+
+    console.log("form submitted..")
 
 });
