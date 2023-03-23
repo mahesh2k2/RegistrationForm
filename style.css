@@ -23,12 +23,14 @@ form{
 .input{
     height: 90px;
     text-transform: capitalize;
+    position: relative;
 }
 h1{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 12px;
     color:darkslategrey;
+    cursor: pointer;
 }
 .errorMsg{
     color: red;
@@ -49,12 +51,30 @@ div input{
 #checkbox label{
     text-align: center;
     color: rgb(38, 21, 2);
+    cursor: pointer;
 }
-button{
+#submit-button{
     margin-top: 10px;
     padding: 5px 0;
     border-radius: 4px;
     background-color:#657879;
     border: #657879;
     color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#submit-button:active{
+    background-color:#3b4849;
+}
+#eye-icon{
+    position: absolute;
+    border: none;
+    background: transparent;
+    right: 10px;
+    bottom: 45px;
+    color: rgba(0, 0, 0,0.7);
+    transform: scale(1.1);
+    cursor: pointer;
 }
